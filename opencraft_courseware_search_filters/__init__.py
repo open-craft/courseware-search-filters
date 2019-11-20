@@ -1,0 +1,1 @@
+from .exclude_capa import ExcludeCapaSearchFilterGenerator
