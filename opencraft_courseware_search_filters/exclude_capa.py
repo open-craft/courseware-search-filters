@@ -1,3 +1,6 @@
+"""
+Create ExcludeCapaSearchFilterGenerator from LmsSearchFilterGenerator
+"""
 from lms.lib.courseware_search.lms_filter_generator import LmsSearchFilterGenerator
 
 
@@ -16,7 +19,7 @@ class ExcludeCapaSearchFilterGenerator(LmsSearchFilterGenerator):
         """
         Exclude CAPA results
         """
-        exclude_dictionary = super(LmsSearchFilterGenerator, self).exclude_dictionary(
+        exclude_dictionary = super(LmsSearchFilterGenerator, self).exclude_dictionary(  # pylint: disable=bad-super-call
             **kwargs
         )
         exclude_dictionary["content_type"] = "CAPA"
