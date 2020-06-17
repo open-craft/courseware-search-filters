@@ -21,10 +21,17 @@ The following filter generators are available:
 - `opencraft_courseware_search_filters.ExcludeCapaSearchFilterGenerator`
 
 
-## Development
+## Testing
 
-TODO: add testing
+The test suite uses `tox`, so install it into a virtualenv to run the tests:
+```
+pip install tox
+```
 
+Then, to run the tox tests, run the following command in the repository directory.
+```
+tox
+```
 
 
 ## License
