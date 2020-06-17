@@ -1,8 +1,0 @@
-[MASTER]
-load-plugins = edx_lint.pylint,pylint_celery
-
-[MESSAGES CONTROL]
-disable = 
-    django-not-available,
-    django-not-available-placeholder,
-    too-few-public-methods,

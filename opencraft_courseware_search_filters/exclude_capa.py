@@ -4,7 +4,7 @@ Create ExcludeCapaSearchFilterGenerator from LmsSearchFilterGenerator
 from lms.lib.courseware_search.lms_filter_generator import LmsSearchFilterGenerator
 
 
-class ExcludeCapaSearchFilterGenerator(LmsSearchFilterGenerator):
+class ExcludeCapaSearchFilterGenerator(LmsSearchFilterGenerator):  # pylint: disable=too-few-public-methods
     """
     Class to provide a set of custom filters for the search. Inherits from the
     default LmsSearchFilterGenerator, which in turn inherits from
