@@ -19,7 +19,7 @@ class ExcludeCapaSearchFilterGenerator(LmsSearchFilterGenerator):  # pylint: dis
         """
         Exclude CAPA results
         """
-        exclude_dictionary = super(LmsSearchFilterGenerator, self).exclude_dictionary(  # pylint: disable=bad-super-call
+        exclude_dictionary = super().exclude_dictionary(
             **kwargs
         )
         exclude_dictionary["content_type"] = "CAPA"
