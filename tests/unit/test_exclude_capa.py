@@ -11,7 +11,7 @@ from opencraft_courseware_search_filters import ExcludeCapaSearchFilterGenerator
 class TestExcludeCapaSearchFilterGenerator(unittest.TestCase):
     def test_exclude_dictionary_for_content_type_key(self):
         search_filter = ExcludeCapaSearchFilterGenerator()
-        self.assertIn("content_type", search_filter.exclude_dictionary())
+        self.assertEqual("CAPA", search_filter.exclude_dictionary()["content_type"])
 
 if __name__ == "__main__":
     unittest.main()
